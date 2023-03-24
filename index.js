@@ -15,3 +15,9 @@ document.getElementById("resume-link-2").addEventListener("click", () => {
 });
 
 /* --------------------------------------------------RESUME-DOWNLOAD------------------------------------------------------ */
+/* --------------------------------------------------HAMBURGER------------------------------------------------------ */
+let hamburger = document.querySelector("#hamburger");
+hamburger.onclick = function (){
+    let navMenu =document.querySelector("#nav-menu")
+    navMenu.classList.toggle("active")
+}

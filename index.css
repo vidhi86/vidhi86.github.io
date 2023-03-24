@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4.8rem;
+    height: 6rem;
+    background-color: grey;
+}
+#logo{
+    font-size: 25px;
+    width:200px;
+}
+#hamburger{
+    height: 30px;
+    width: 35px;
+    margin:30px 0px 20px 20px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+.nbar{
+    height: 5px;
+    width: 100%;
+    background-color:black;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+#nav-menu ul{
+    display: flex;
+    gap:4rem;
+    list-style: none;
+}
+#nav-menu ul li a{
+    display: block;
+    color:white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin:0 5px
+}
+#nav-menu ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.nav-link:link,
+.nav-link:visited{
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    columns: white;
+    transition: all 0.3s;
+}
+#nav-menu .active{
+    height:450px;
+}
+#nav-menu .active ul{
+    opacity: 1;
+}
+@media only screen and (max-width:1320px) {
+    .header{
+      padding: 0 50px;
+    }
+}
+@media only screen and (max-width:950px) {
+    .header{
+      padding: 0 30px;
+    }
+}
+@media only screen and (max-width:900px) {
+    #hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    #hamburger .nbar{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+    
+    #nav-menu{
+        height:0px;
+        position: absolute;
+        top:80px;
+        left:0;
+        right: 0;
+        width:100vw;
+        background-color: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    #nav-menu ul{
+        display: block;
+        width:fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+}
