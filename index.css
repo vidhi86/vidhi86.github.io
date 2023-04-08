@@ -156,6 +156,7 @@
     margin-left: 50px;
     font-size: 50px;
     color: rgb(127, 141, 170);
+    text-align: center;
 }
 .about-section img{
      height:400px;
@@ -227,3 +228,64 @@
 
 
 /* project section  */
+
+.project-card{
+    display: flex;
+    background-color: #FCE4EC;
+    padding: 20px;
+    gap:20px;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+     color: rgb(219, 68, 118);
+}
+.project-card a img{
+    width:600px;
+    height: 300px;
+    border-radius: 10px;
+    border: 4px solid #F8BBD0;
+}
+.project-title{
+    font-size: 50px;
+}
+.insideProjectCard{
+    margin-left: 100px;
+}
+.project-description{
+     color: rgb(127, 141, 170);
+     font-size: 20px;
+}
+.project-tech-stack{
+    margin: 20px;
+}
+.project-github-link{
+    border: 0;
+    background-color: #FCE4EC;
+    width:30px;
+    font-size: 30px;
+    margin: 20px;
+    align-items: baseline;
+}
+.project-github-link a{
+  text-decoration: none;
+  color: black;
+}
+.project-deployed-link{
+    background-color: rgb(219, 68, 118) ;
+    border: 0;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+}
+.project-deployed-link a{
+    text-decoration: none;
+  color: white;
+}
+
+/* contact section  */
+#contact{
+    color: rgb(127, 141, 170);
+    padding: 40px;
+}
