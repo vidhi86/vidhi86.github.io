@@ -322,3 +322,30 @@
 #contact-phone img{
     width:60px;
 }
+
+
+/* calendar */
+#githubsection {
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  padding-bottom: 5em;
+}
+
+#githubsection img {
+  transition: all 0.2s;
+  width: 100%;
+  object-fit: contain;
+  height: 300px;
+}
+
+.react-activity-calendar {
+  visibility: hidden;
+  height: 1px;
+  display: flex;
+}
+
+.react-activity-calendar img {
+  height: 1px;
+  width: 1px;
+}

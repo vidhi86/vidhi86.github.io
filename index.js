@@ -21,3 +21,14 @@ hamburger.onclick = function (){
     let navMenu =document.querySelector("#nav-menu")
     navMenu.classList.toggle("active")
 }
+// calendar
+
+let arr = ["https://github-readme-stats.vercel.app/api/top-langs?username=jadaun-sahab&show_icons=true&locale=en&layout=compact", "https://github-readme-stats.vercel.app/api?username=jadaun-sahab&show_icons=true&locale=en", "https://github-readme-streak-stats.herokuapp.com?user=jadaun-sahab&theme=vue&border_radius=4.3"];
+
+    let j=0;
+     function slides2(){
+     document.getElementById("image2").src = arr[j];
+        if (j<arr.length - 1) j++;
+        else j=0;
+  }
+  setInterval(slides2, 1500);

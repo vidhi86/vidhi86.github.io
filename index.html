@@ -333,7 +333,7 @@ Looking forward to kickstart the career in the IT sector.
 
 
 
-    <h1 class="mainheading">GitHub Activity</h1>
+    <!-- <h1 class="mainheading">GitHub Activity</h1>
 
     <section title="Github-Stats" >
         <div class="react-activity-calendar"></div>
@@ -349,8 +349,29 @@ Looking forward to kickstart the career in the IT sector.
                 src="https://github-readme-stats.vercel.app/api?username=vidhi86&show_icons=true&locale=en"
                 alt="stat-card" />  
         </div>
+    </section> -->
+
+
+    <h1 class="mainheading">GitHub Activity</h1>
+
+    <section title="Github-Stats" class="react-activity-calendar">
+        <img id="github-streak-stats"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=jadaun-sahab&"
+            alt="streakstat" />
+        <div>
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs?username=jadaun-sahab&show_icons=true&locale=en&layout=compact"
+                alt="jadaun-sahab" />
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=jadaun-sahab&show_icons=true&locale=en"
+                alt="stat-card" />  
+        </div>
     </section>
 
+    <div id="githubsection">
+        <img id="image2"
+            src="https://github-readme-stats.vercel.app/api?username=jadaun-sahab&show_icons=true&locale=en">
+    </div>
     
 
     <!-------------------------------------------------- GitHUB ---------------------------------------------------->
@@ -371,17 +392,17 @@ Looking forward to kickstart the career in the IT sector.
     
     
   
-    GitHubCalendar(".calendar", "vidhi86");
+    // GitHubCalendar(".calendar", "vidhi86");
 
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "vidhi86", { responsive: true });
+    // // or enable responsive functionality:
+    // GitHubCalendar(".calendar", "vidhi86", { responsive: true });
 
-    // Use a proxy
-    GitHubCalendar(".calendar", "vidhi86", {
-       proxy (vidhi86) {
-         return fetch(`https://your-proxy.com/github?user=${vidhi86}`)
-       }
-    }).then(r => r.text())
+    // // Use a proxy
+    // GitHubCalendar(".calendar", "vidhi86", {
+    //    proxy (vidhi86) {
+    //      return fetch(`https://your-proxy.com/github?user=${vidhi86}`)
+    //    }
+    // }).then(r => r.text())
 
 
 </script>
