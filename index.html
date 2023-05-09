@@ -66,7 +66,7 @@
             <h1>Hello👋🏻 <br>I'm</h1>
             <h1 id="user-detail-name">Vidhi-Sharma</h1>
             <h2 id="user-details-intro">Aspiring Full Stack Web Developer, with a Specialization
-in CSS and Reactjs Frameworks and a good grasp of
+in CSS ,Javascript and React Frameworks and a good grasp of
 MERN concept . collaborative team player who is
 professional in working on interdisciplinary projects.
 Looking forward to kickstart the career in the IT sector.
@@ -95,9 +95,9 @@ Looking forward to kickstart the career in the IT sector.
         </h2>
         
     </section>
-    <marquee  behavior="scroll" direction="left">
+    <!-- <marquee  behavior="scroll" direction="left"> -->
     <img src="https://static.vecteezy.com/system/resources/previews/000/450/872/original/woman-with-laptop-sitting-isolated-on-white-background-concept-illustration-for-working-freelancing-studying-education-work-from-home-vector-illustration-in-flat-cartoon-style.jpg"/>
-    </marquee>
+    <!-- </marquee> -->
     </div>
     
     
@@ -288,24 +288,33 @@ Looking forward to kickstart the career in the IT sector.
 
             <img id="imghand" src="image/Handshake-lower-res.gif" alt="" width="100px">
             <img src="image/work-working.gif" alt="">
-
+                    <div class="lindingithub"> 
+                        <a id="contact-github" href="https://github.com/vidhi86"><i
+                                    class="fa-brands fa-github-alt"></i></a>
+                            <a id="contact-linkedin" href="https://www.linkedin.com/in/vidhi98/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                <div>
+                    <div id="contact-phone" href="#">
+                        <img src="./image/phone-call.png"/>
+                        <p>8619510169</p>
+                    </div>
+                    <a id="contact-email" href="#">
+                        <img src=""/>
+                        <p>vidhi98sharma@gmail.com</p></a>
+                </div>
+                
         </div>
+       
         <div class="contact-child-2">
 
             <h1>Contact-me</h1>
-            <form action="https://formsubmit.co/vidhi98sharma@gmail.com" method="POST">
-                <input type="text" name="name" id="name" placeholder="Name" required>
-                <input type="email" name="email" id="email" placeholder="e-mail" required>
-                <input type="text" name="text" id="msg" placeholder="Your Massage Here">
+            <form id="contactForm" action="https://formsubmit.co/vidhi98sharma@gmail.com" method="POST">
+                <input type="text" name="name" id="name" placeholder="Name" required><br>
+                <input type="email" name="email" id="email" placeholder="e-mail" required><br>
+                <input type="text" name="text" id="msg" placeholder="Your Massage Here"><br>
                 <button class="btns" type="submit">Submit</button>
-                <div class="lindingithub"> <a id="contact-github" href="https://github.com/vidhi86"><i
-                            class="fa-brands fa-github-alt"></i></a>
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/vidhi98/"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                </div>
-
-                <a id="contact-phone" href="#">Contact Number- 8619510169</a>
-                <a id="contact-email" href="">Email Address - vidhi98sharma@gmail.com</a>
+                
             </form>
         </div>
     </div>
@@ -320,7 +329,8 @@ Looking forward to kickstart the career in the IT sector.
 
     <h1 class="mainheading">GitHub Activity</h1>
 
-    <section title="Github-Stats" class="react-activity-calendar">
+    <section title="Github-Stats" >
+        <div class="react-activity-calendar calendar"></div>
         
         <img id="github-streak-stats"
             src="https://github-readme-streak-stats.herokuapp.com/?user=vidhi86&"
@@ -354,7 +364,10 @@ Looking forward to kickstart the career in the IT sector.
 <script src="index.js">
     
     
-    // GitHubCalendar(".calendar", "kuttu101996");
+  
+    GitHubCalendar(".calendar", "vidhi86");
+
+    // or enable responsive functionality:
     GitHubCalendar(".calendar", "vidhi86", { responsive: true });
 
     // Use a proxy
@@ -362,7 +375,7 @@ Looking forward to kickstart the career in the IT sector.
        proxy (vidhi86) {
          return fetch(`https://your-proxy.com/github?user=${vidhi86}`)
        }
-    })
+    }).then(r => r.text())
 
 
 </script>
