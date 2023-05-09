@@ -8,7 +8,7 @@ document.getElementById("resume-link-1").addEventListener("click", () => {
 });
 
 document.getElementById("resume-link-2").addEventListener("click", () => {
-  window.open(
+  window.location.assign(
     "https://drive.google.com/file/d/11LSC_CpTntfSHYcNwM70oB2-jbGvYTsu/view?usp=share_link",
     "_blank"
   );
