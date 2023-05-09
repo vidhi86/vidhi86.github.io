@@ -23,7 +23,11 @@ hamburger.onclick = function (){
 }
 // calendar
 
-let arr = ["https://github-readme-streak-stats.herokuapp.com/?user=vidhi86&","https://github-readme-stats.vercel.app/api/top-langs?username=vidhi86&show_icons=true&locale=en&layout=compact","https://github-readme-stats.vercel.app/api?username=vidhi86&show_icons=true&locale=en"];
+let arr = [
+  "https://github-readme-streak-stats.herokuapp.com/?user=vidhi86&",
+  "https://github-readme-stats.vercel.app/api/top-langs?username=vidhi86&show_icons=true&locale=en&layout=compact",
+  "https://github-readme-stats.vercel.app/api?username=vidhi86&show_icons=true&locale=en",
+];
 
     let j=0;
      function slides2(){
