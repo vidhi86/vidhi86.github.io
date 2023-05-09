@@ -70,6 +70,16 @@
 #nav-menu .active ul{
     opacity: 1;
 }
+#resume-button-1{
+    border:0;
+    color: white;
+    background-color: #F8BBD0;
+    font-size: 18px;
+    
+}
+.nav-link a{
+    text-decoration: none;
+}
 @media only screen and (max-width:1320px) {
     .header{
       padding: 0 50px;
@@ -113,7 +123,7 @@
     }
 }
 .home-img{
-    width:400px;
+    width:300px;
     margin: 50px;
     border-radius: 20px;
     border: 1px solid rgb(127, 141, 170);
@@ -298,12 +308,14 @@
    margin: 10px;
    height: 30px;
    border: 1px solid rgb(127, 141, 170);
+   padding: 10px;
 }
 #contactForm button{
    width:400px;
    margin: 10px;
    height: 30px;
    background-color: rgb(219, 68, 118) ;
+   border: 10px;
    color: white;
    border: 0;
    font-weight: bolder;
@@ -321,9 +333,26 @@
 }
 #contact-phone img{
     width:60px;
+    
+
 }
-
-
+#contact-email img{
+    width:60px;
+    
+}
+.phoneEmail{
+    display: flex;
+    
+}
+.phoneEmail div{
+    margin:30px;
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 200px;
+    height:100px ;
+    padding: 10px;
+    text-align: center;
+}
 /* calendar */
 #githubsection {
   margin: 0 auto;
