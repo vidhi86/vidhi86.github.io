@@ -2,25 +2,42 @@
 
 document.getElementById("resume-link-1").addEventListener("click", () => {
   window.location.assign(
-    "https://drive.google.com/file/d/11LSC_CpTntfSHYcNwM70oB2-jbGvYTsu/view?usp=share_link",
+    "https://drive.google.com/file/d/1sii6F0aKP20wAR4JmkMt3vuAXh2FcbMo/view?usp=share_link",
     "_blank"
   );
 });
 
 document.getElementById("resume-link-2").addEventListener("click", () => {
   window.location.assign(
-    "https://drive.google.com/file/d/11LSC_CpTntfSHYcNwM70oB2-jbGvYTsu/view?usp=share_link",
+    "https://drive.google.com/file/d/1sii6F0aKP20wAR4JmkMt3vuAXh2FcbMo/view?usp=share_link",
     "_blank"
   );
 });
 
 /* --------------------------------------------------RESUME-DOWNLOAD------------------------------------------------------ */
 /* --------------------------------------------------HAMBURGER------------------------------------------------------ */
-let hamburger = document.querySelector("#hamburger");
-hamburger.onclick = function (){
-    let navMenu =document.querySelector("#nav-menu")
-    navMenu.classList.toggle("active")
+let hamburger = document.querySelector(".hamburger");
+let navMenu = document.querySelector(".navMenu");
+
+hamburger.addEventListener("click",()=>{
+  hamburger.classList.toggle("active")
+  navMenu.classList.toggle("active");
+
+})
+/* --------------------------------------------------STICKY NAVBAR------------------------------------------------------ */
+window.onscroll = function () {
+  myFunction();
+};
+var navbar = document.getElementById("nav-menu");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 }
+
 // calendar
 
 let arr = [
