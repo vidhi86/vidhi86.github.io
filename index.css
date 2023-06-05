@@ -50,6 +50,7 @@ a{
 }
 .nav-link{
     transition: 0.1s ease;
+    color: #faa4c2;
 }
 .navItem{
     color: #faa4c2;
